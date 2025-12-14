@@ -70,9 +70,9 @@ function openGift(){
 
 /* Gifts with weights */
 const gifts = [
-  {name:"خصم 20%", weight:5},
-  {name:"قسيمة شراء 150ج", weight:3},
-  {name:"كارتيه هدية", weight:2},
+  {name:"خصم 10 عشوائي%", weight:5},
+  {name:"قسيمة شراء50ج", weight:3},
+  {name:"كارتير هدية", weight:2},
   {name:"قلم كحل هدية", weight:6},
   {name:"أسورة مسمار هدية", weight:4},
   {name:"سلسلة هدية", weight:4},
@@ -93,3 +93,4 @@ function toggleScreen(hide,show){
   document.getElementById(hide).classList.remove("active");
   document.getElementById(show).classList.add("active");
 }
+
