@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One One – لعبة الفوازير</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Animated Background -->
+<div class="background">
+  <span class="float makeup"></span>
+  <span class="float accessory"></span>
+  <span class="float gift"></span>
+</div>
+
+<!-- Follow Gate -->
+<div class="screen active" id="followScreen">
+  <h1>One One</h1>
+  <p>لازم تكون متابع صفحة One One علشان تلعب</p>
+  <a href="https://www.facebook.com/profile.php?id=61579729365388&locale=ar_AR" target="_blank" class="btn">افتح صفحة One One</a>
+  <button class="btn primary" onclick="startGame()">تمت المتابعة – ابدأ اللعب</button>
+</div>
+
+<!-- Game Screen -->
+<div class="screen" id="gameScreen">
+  <h2 id="question"></h2>
+
+  <input type="text" id="answerInput" placeholder="اكتب الإجابة هنا">
+  
+  <div class="actions">
+    <button class="btn primary" onclick="checkAnswer()">تحقق من الحل</button>
+    <button class="btn" onclick="showHint()">هنت</button>
+  </div>
+
+  <p class="hint" id="hint"></p>
+  <p class="result" id="result"></p>
+</div>
+
+<!-- Success Screen -->
+<div class="screen" id="successScreen">
+  <h2>إجابة صحيحة 🎉</h2>
+  <p id="rating"></p>
+  <p id="percent"></p>
+
+  <button class="btn primary" onclick="shareGame()">مشاركة</button>
+  <button class="btn" onclick="openGift()">افتح الهدية 🎁</button>
+</div>
+
+<!-- Gift Screen -->
+<div class="screen" id="giftScreen">
+
+  <h2 class="win">🎉 مبروك كسبت مع One One 🎉</h2>
+
+  <div class="box">🎁</div>
+
+  <h3 id="giftText"></h3>
+
+  <div class="steps">
+    <p>علشان تستلم هديتك 👇</p>
+    <ul>
+      <li>✔️ اعمل شير لبوست اللعبة</li>
+      <li>✔️ اعمل دعوة لأصحابك</li>
+      <li>✔️ خد Screenshot بالمكسب</li>
+      <li>✔️ نزّل الصورة Comment على بوست اللعبة</li>
+    </ul>
+  </div>
+
+  <a href="#" target="_blank" class="btn primary">
+    افتح بوست اللعبة
+  </a>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

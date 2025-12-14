@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font-family: "Tahoma", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0e0e11;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Screens */
+.screen {
+  display: none;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.screen.active {
+  display: flex;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  margin: 8px;
+  cursor: pointer;
+  background: #2a2a35;
+  color: #fff;
+}
+
+.btn.primary {
+  background: linear-gradient(45deg, #ff4d8d, #ff8ccf);
+}
+
+/* Inputs */
+input {
+  padding: 12px;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 25px;
+  border: none;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* Background Animation */
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.float {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  opacity: 0.15;
+  animation: float 12s infinite linear;
+}
+
+.makeup {
+  background: radial-gradient(circle, pink, transparent);
+  top: 10%;
+  left: 20%;
+}
+
+.accessory {
+  background: radial-gradient(circle, gold, transparent);
+  top: 50%;
+  left: 70%;
+}
+
+.gift {
+  background: radial-gradient(circle, violet, transparent);
+  top: 80%;
+  left: 30%;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-40px); }
+  100% { transform: translateY(0); }
+}
+
+/* Gift Box */
+.box {
+  font-size: 80px;
+  animation: shake 1s infinite;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+}
+.win {
+  color: #ff8ccf;
+  margin-bottom: 10px;
+}
+
+.steps {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.steps ul {
+  list-style: none;
+  padding: 0;
+}
+
+.steps li {
+  margin: 8px 0;
+}
